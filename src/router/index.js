@@ -1,10 +1,11 @@
+/* eslint-disable */
 import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
-import Dashboard from '@component/Dashboard'
-import NewEmployee from '@component/NewEmployee'
-import EditEmployee from '@component/EditEmployee'
-import ViewEmployee from '@component/ViewEmployee'
+import Dashboard from '@/components/Dashboard'
+import NewEmployee from '@/components/NewEmployee'
+import EditEmployee from '@/components/EditEmployee'
+import ViewEmployee from '@/components/ViewEmployee'
 
 Vue.use(Router)
 
@@ -26,7 +27,7 @@ export default new Router({
       component: EditEmployee
     },
     {
-      path: '/view',
+      path: '/:employee_id',
       name: 'view-employee',
       component: ViewEmployee
     }
